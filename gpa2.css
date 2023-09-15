@@ -60,6 +60,7 @@
 	margin-top:2px;
 	outline: none;
 	border: none;
+	cursor: pointer;
 }
 .credit{
 	margin-left:45px;
