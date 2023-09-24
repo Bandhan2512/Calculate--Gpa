@@ -1,59 +1,85 @@
-.div1gpa{
-	width:100%;
-	height:712px;
-	background-color:#446655;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top:9px;
-	padding-bottom:5px;
-}
-.div2gpa{
-	width:600px;
-	height:200px;
-	background-color: #446655;
-	backdrop-filter: blur(1px);
-	-webkit-backdrop-filter: blur(1px);
-	margin-left:430px;
-	margin-top:200px;
-	border-radius: 18px;
-	box-shadow: 0px 0px 80px black;
-}
-.insideglass{
-	padding: 10px 10px 10px 10px;
-	color:white;
-}
-#inputbox{
-	width:200px;
-	height:25px;
-	background-color:white;
-	color:#446655;
-	padding-left:10px;
-	outline:none;
-	border:none;
-	font-size:20px;
-	font-weight: bold;
-}
-#calculateblur{
-	width:300px;
-	height:80px;
-	background-color: #446655;
-	margin-left:1100px;
-	margin-top:170px;
-	border-radius: 18px;
-	box-shadow: 0px 0px 80px black;
+.conti{
+	padding: 5px;
+	border-radius: 6px;
+	font-size: 20px;
+	white-space: nowrap;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+	display: flex;
+	align-items: end;
+	justify-content: end;
 	
 }
-#gpacalculatebutton{
-	width:150px;
-	height:30px;
-	margin:25px 75px 25px 75px;	
-	font-size:22px;
-	color:#446655;
-	background-color:white;
-	outline:none;
-	border:none;
-	cursor:pointer;
+.ft{
+	font-size:30px;
 }
+.head1 {
+    min-height: 100px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.head1 h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 20px;
+}
+
+.dim{		
+	min-height: 100px;
+	border-radius: 15px;
+}
+.dim1{
+	min-height: 100px;
+}
+.man{
+	margin-top: 120px;
+}
+.continue{
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 20px;
+}
+input[placeholder="Enter number of subjects"]{
+	padding-bottom:7px;
+}
+.inputnum{
+	max-width: 100%;
+	color: white;
+	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	border-radius: 5px;
+	min-height: 40px;
+	font-size: 20px;
+	text-align: center;
+}
+.inputnum::-webkit-inner-spin-button,
+.inputnum::-webkit-outer-spin-button,
+.inputnum::-webkit-clear-button {
+    display: none;
+}
+
+.inputnum::-webkit-inner-spin-button,
+.inputnum::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.inputnum::placeholder {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.cal{
+	max-width: 100%;
+	justify-content: end;
+}
+.but1{
+	max-width: 95%;
+}
+.but{
+	margin-top: 140px;
+}
+	
 
 
 
