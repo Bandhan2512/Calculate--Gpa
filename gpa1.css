@@ -79,11 +79,11 @@ input[placeholder="Enter number of subjects"]{
 .but{
 	margin-top: 140px;
 }
-a{
-	text-decoration: none;
-}
 .foncol{
 	color: white;
+}
+a{
+	text-decoration: none;
 }
 	
 
