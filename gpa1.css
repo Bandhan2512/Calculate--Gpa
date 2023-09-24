@@ -79,6 +79,9 @@ input[placeholder="Enter number of subjects"]{
 .but{
 	margin-top: 140px;
 }
+a{
+	text-decoration: none;
+}
 	
 
 
