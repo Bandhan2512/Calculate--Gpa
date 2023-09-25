@@ -40,7 +40,7 @@
 	<div class="container but1">
             <div class="row cal">
                 <div class="col-2 text-end">
-                    <button class="conti btn btn-dark" style="font-family: 'Bell MT';"><a class="foncol" id="cli" href="gpacalculator2.html">Continue</a></button>
+                    <button class="conti btn btn-dark" id="cli" style="font-family: 'Bell MT';">Continue</button>
                 </div>
             </div>
 	</div>
@@ -54,12 +54,20 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script> 
-	    let noofsubs = document.getElementById("inputnumber").value;
-	    document.getElementById("cli").addEventListener("click",function(){
-		    if(!noofsubs || noofsubs<=0){
-			    alert("Please provide Valid input");
-		    }
-	    });
+	    
+	    document.getElementById("cli").addEventListener("click",fun1);
+	    function fun1(){
+		let subqty = document.getElementById("inputnumber").value;
+		if(!subqty || subqty<=0){
+			alert("Please provide VALID input");
+			window.location.href="gpacalculator.html";
+		}
+		else{
+			localStorage.setItem("inputnextpage",subqty);
+			window.location.href="gpacalculator2.html";
+		}
+	    }
     </script>
 </body>
 </html>
+
