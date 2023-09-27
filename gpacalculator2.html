@@ -10,10 +10,11 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="bigbox mx-auto col-11 col-sm-10 col-md-8 col-lg-6">
-				<div id="numboxes"></div><hr>
+			<div class="bigbox mx-auto text-center col-11 col-sm-10 col-md-8 col-lg-6">
+				<div id="numboxes" class="text-center mb-3"></div><hr>
 				<center><h4 class="head"> Total Credits : <span id="totalCredits"> 0 </span></h4></center><hr><br>
 				<center><button class="conti" id="cli" style="font-family: 'Bell MT';"><a id="mysty" href="lastpagegpa.html">Compute</a></button></center>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -30,6 +31,9 @@
         function generateInputs(noofsubjects){
             var inputHTML='';
             for (let i = 0; i < noofsubjects; i++) {
+		inputHTML += '<div class="row justify-content-center mb-3">';
+		inputHTML += '<div class="col-6">';
+		inputHTML += '<center>';
                 inputHTML += '<select class="credit" id="credit_' + i + '">';			
                 inputHTML += '<option class="credit" value="0" selected> Credits </option>';
                 inputHTML += '<option class="credit" value="1"> 1 </option>';
@@ -40,8 +44,10 @@
                 inputHTML += '<option class="credit" value="5"> 5 </option>';
                 inputHTML += '<option class="credit" value="6"> 6 </option>';
                 inputHTML += '</select>';
-
-                inputHTML += '<select class="grade" id="grade_' + i + '">';
+		inputHTML += '</div>';
+	
+		inputHTML += '<div class="col-6">';
+                inputHTML += '<select class="grade ml-2" id="grade_' + i + '">';
                 inputHTML += '<option class="grade" value="11" selected> Grade </option>';
                 inputHTML += '<option class="grade" value="10"> S </option>';
                 inputHTML += '<option class="grade" value="9"> A </option>';
@@ -51,6 +57,8 @@
                 inputHTML += '<option class="grade" value="5"> E </option>';
                 inputHTML += '<option class="grade" value="4"> F </option>';
                 inputHTML += '</select>';
+		inputHTML += '</div>';
+		inputHTML += '</div>';
             }
             document.getElementById("numboxes").innerHTML = inputHTML;
             for (let k = 0; k < inputvalue; k++) {
