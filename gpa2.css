@@ -6,7 +6,7 @@ body{
 	height: 600px;
 	background-color: red;
 	margin-top: 80px;
-	max-width: 420px;
+	max-width: 400px;
 	justify-content: center;
 	background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(0.5px);
@@ -20,7 +20,7 @@ body{
 	z-index: 3;
 }
 .credit{
-	margin-left:65px;
+	margin-left:50px;
 	padding:5px 11px 5px 11px;
 	font-size:22px;
 	margin-top:20px;
@@ -29,7 +29,7 @@ body{
 	font-weight:bold;
 }
 .grade{
-	margin-left:75px;
+	margin-left:65px;
 	padding:5px 11px 5px 11px;
 	font-size:22px;
 	margin-top:20px;
@@ -52,12 +52,20 @@ hr{
 	font-weight: bold;
 } 
 .conti{
-	font-size: 20px;
-	margin-left: 150px;
+	margin-left: 140px;
+	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	border-radius: 5px;
+	outline: none;
+	border: none;
 }
 a{
 	text-decoration: none;
 	color: white;
+}
+#mysty{
+	padding:0px;
+	font-size: 24px;
+	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 }
 
 	
