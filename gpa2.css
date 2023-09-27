@@ -1,92 +1,63 @@
-.div1gpa2{
-	width:100%;
-	height:712px;
-	background-color:#446655;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top:9px;
-	padding-bottom:5px;
-}	
-.div2gpa2{
-	width:400px;
-	height:478px;
-	background-color: #446655;
-	border-radius: 18px;
-	margin-left:550px;
-	margin-top:70px;
-	padding-top:1px;
-	box-shadow: 0px 0px 80px black;
+body{
+	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	font-family: Bell MT;
 }
-.div3gpa2{
-	width:372px;
-	height:380px;
-	background-color:#446655;
-	margin-top:35px;
-	margin-left:23px;
-	overflow:scroll;
-	overflow-x:hidden;
-	padding-top:1px;
+.bigbox{
+	height: 600px;
+	background-color: red;
+	margin-top: 80px;
+	max-width: 420px;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(0.5px);
 }
-.tcb{
-	width:200px;
-	height:40px;
-	padding: 7px 10px 9px 10px;
-	background-color:#446655;
-	color:white;
-	font-weight:bold;
-	font-size:20px;
-	margin-top:0px;
-	outline:none;
-	border:none;
-}
-#getgpabox{
-	width:400px;
-	height:50px;
-	background-color:#446655;
-	margin-left:550px;
-	margin-top:20px;
-	border-radius:18px;
-	padding-top:22px;
-	padding-bottom:18px;
-	box-shadow: 0px 0px 40px black;
-}
-#getgpabutton{
-	width:200px;
-	padding: 8px 11px 8px 11px;
-	background-color:white;
-	color:#446655;
-	font-weight:bold;
-	font-size:20px;
-	margin-top:2px;
-	outline: none;
-	border: none;
-	cursor: pointer;
+#numboxes{
+	max-width: 420px;
+	overflow: scroll;
+	overflow-x: hidden;
+	height: 398px;
+	margin-top: 15px;
+	z-index: 3;
 }
 .credit{
-	margin-left:45px;
-	padding:8px 11px 8px 11px;
-	font-size:18px;
+	margin-left:65px;
+	padding:5px 11px 5px 11px;
+	font-size:22px;
 	margin-top:20px;
 	background-color:white;
-	color:#446655;
+	color:RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 	font-weight:bold;
 }
 .grade{
 	margin-left:75px;
-	padding:8px 11px 8px 11px;
-	font-size:18px;
+	padding:5px 11px 5px 11px;
+	font-size:22px;
 	margin-top:20px;
 	background-color:white;
-	color:#446655;
+	color:RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 	font-weight:bold;
 }
 ::-webkit-scrollbar{
-	width:8px;
-	height:490px;
-	padding-right:5px;
+	max-width:5px;
 }
 ::-webkit-scrollbar-thumb{
-	background:white;
-	padding-right:5px;
+	background:RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	border-radius: 5px;	
 }
+hr{
+	color: white;
+}
+.head{
+	color:RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	font-weight: bold;
+} 
+.conti{
+	font-size: 20px;
+	margin-left: 150px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
 	
