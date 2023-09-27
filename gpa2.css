@@ -52,7 +52,6 @@ hr{
 	font-weight: bold;
 } 
 .conti{
-	margin-left: 140px;
 	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 	border-radius: 5px;
 	outline: none;
@@ -67,5 +66,7 @@ a{
 	font-size: 24px;
 	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 }
+
+	
 
 	
