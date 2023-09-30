@@ -13,7 +13,7 @@
 			<div class="bigbox mx-auto text-center col-11 col-sm-10 col-md-8 col-lg-6">
 				<div id="numboxes" class="text-center mb-3"></div><hr>
 				<center><h4 class="head"> Total Credits : <span id="totalCredits"> 0 </span></h4></center><hr><br>
-				<center><button class="conti" id="cli" style="font-family: 'Bell MT';"><a id="mysty" href="lastpagegpa.html">Compute</a></button></center>
+				<center><a id="mysty">Compute</a></center>
 				</div>
 			</div>
 		</div>
@@ -81,10 +81,11 @@
             
         }
 
-        document.getElementById("cli").addEventListener("click", function(){
+        document.getElementById("mysty").addEventListener("click", function(){
             const entercredit = [];
             const entergrade = [];
             var creditxgrade = 0;
+	    let count = 0;
             
             for (let j = 0; j < inputvalue; j++) {
                 var creditselect = document.getElementById("credit_" + j);
@@ -96,14 +97,20 @@
                     entercredit[j] = parseFloat(creditvalue);
                     entergrade[j] = parseFloat(gradevalue);
                     creditxgrade += entercredit[j] * entergrade[j];
-                } else {
-                    alert("Invalid inputs");
-                    return;
+                } 
+		else {
+		    count=count+1;
                 }
             }
-            var result = creditxgrade / totalCredits;
-            localStorage.setItem("gparesult", result);
-            window.location.assign("file:///C:/Users/Bandhan%20Reddy/Music/MyFullStackProject/lastpagegpa.html");
+	    if(count==0){
+            	var result = creditxgrade / totalCredits;
+            	localStorage.setItem("gparesult", result.toFixed(5));
+		window.location.href= "lastpagegpa.html";
+	    }
+	    else{
+		alert("Invalid Inputs");
+		window.location.href = "gpacalculator2.html";
+	    }
         });
 	</script>
 	<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
