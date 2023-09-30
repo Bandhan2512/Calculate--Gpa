@@ -1,5 +1,5 @@
 body{
-	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	background-color: black;
 	font-family: Bell MT;
 }
 .bigbox{
@@ -47,11 +47,11 @@ hr{
 	color: white;
 }
 .head{
-	color:RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	color:white;
 	font-weight: bold;
 } 
 .conti{
-	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	background-color: white
 	border-radius: 5px;
 	outline: none;
 	border: none;
@@ -63,11 +63,9 @@ a{
 #mysty{
 	padding:0px;
 	font-size: 24px;
-	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	background-color: white;
+	padding: 5px;
+	font-weight: bold;
+	cursor: pointer;
 }
-
-	
-
-	
-
-	
