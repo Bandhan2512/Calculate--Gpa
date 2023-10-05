@@ -14,10 +14,15 @@ li{
 	max-width: 100%;
 	max-height: 250px;
 }
-.icons{
-	
-	height: auto;
-	padding: 0.02px 5px 10px 5px;
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.icons a {
+    display: inline-block; 
+    margin: 0px;
 }
 header{
 	border: 10px solid white;
@@ -33,10 +38,15 @@ footer{
 .myfoot{
 	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 	border: 10px solid white;
+	padding: 0px;
+	display: flex;
+    	flex-direction: column;
+    	justify-content: center; 
+    	align-items: center;
 }
-h2{
+.contact{
 	color: white;
-	padding-bottom: 5px;
+	font-size: 24px;
 }
 .sam{
 	border-radius:30%;
@@ -62,4 +72,99 @@ a{
 	border-radius:50%;
 	margin:5px;
 	margin-left:10px;
+}
+.star{
+	cursor: pointer;
+	font-size: 40px;
+	margin:3px;
+	color: white;
+}
+.myplace{
+	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	min-height: 200px;
+	margin-bottom: 3px;
+	border-radius: 10px;
+}
+.mytop{
+	margin-top: 30px;
+	font-family: Footlight MT Light;
+}
+.mys{
+	background-color: white;
+	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	padding: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.r2{
+	margin-top: 22px;
+	min-height: 30px;
+}
+.stm{
+	color: white;
+}
+.r3{
+	margin-top: 25px;
+	font-size: 18px;
+}
+.myc{
+	margin-top: 25px;
+}
+.mytop{
+	margin-top: 30px;
+
+}
+p{
+	font-size: 24px;
+}
+.box{
+	min-height: 200px;
+	border-radius: 5px;
+	margin-bottom: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 15px;
+}
+.r25{
+	background-color:  RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+}
+.fbout{
+	background-color:  RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	padding-top: 10px;
+	padding-bottom: 5px;
+	
+}
+.fbin{
+	background-color: white;
+	display: flex;
+    	flex-direction: column;
+    	justify-content: center; 
+    	align-items: center;
+	margin-top: 20px;
+}
+textarea{
+	padding-right: 5px;
+	padding-left: 8px;
+}
+.myshow{
+	color: white;
+	background-color:  RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+
+}
+.myc2{
+	margin-top: 25px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.insi{
+	background-color: white;
+	color:  RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	margin-bottom: 15px;
+	font-size: 20px;
+	padding: 0px;
+}
+.contact2{
+	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 }
