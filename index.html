@@ -6,7 +6,6 @@
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="firstpagestyle.css">
-    <!-- Include your custom CSS -->
 </head>
 <body>
 
@@ -36,9 +35,10 @@
                 <h1 class="fw-light">Welcome..!</h1>
                 <p class="lead text-body-secondary">Welcome to our Web Development Toolkit! Explore a range of tools designed to simplify your online experience. From GPA calculation to password generation and CAPTCHA decoding, we've got you covered. Join us in unlocking the world of effortless web development.</p>
                 <p>
-                    <a href="#" class="btn btn-primary my-2">Rate us now</a>
-                    <a href="#" class="btn btn-secondary my-2">Send Feedback</a>
+                    <button type="button" id="myrate" class="btn btn-primary my-2">Rate us now</button>
+                    <button type="button" id="myfeed" class="btn btn-secondary my-2">Send Feedback</button>
                 </p>
+		<div id="ratefree"></div> 
             </div>
         </div>
     </section>
@@ -98,27 +98,116 @@
 
 </main>
 
-<footer class="text-body-secondary myfoot">
-    <div class="container sf">
-	<div class="row">
-        <div class="col-5 col-sm-6 col-lg-6 col-md-6"><h2>Contact</h2></div>
-       	<div class="icons col-7 col-sm-6 col-lg-6 col-md-6"><center>
-                        <a href="https://www.instagram.com/accounts/login/" target="blank">
-                            <img id="ins" src="instagram.png" width="30" height="30" class="sam">
-                        </a>
-                        <a href="https://accounts.snapchat.com/accounts/welcome" target="blank">
-                            <img id="tel" src="telegram.png" width="30" height="30" class="sam2">
-                        </a>
-                        <a href="https://web.whatsapp.com/" target="blank">
-                            <img id="what" src="whatsapp.png" width="30" height="30" class="sam">
-                        </a>
-                        <a href="https://www.linkedin.com/login" target="blank">
-                            <img id="lin" src="linkedin.png" width="30" height="30" class="sam" >
-                        </a></center>
+<footer class="text-body-secondary text-center myfoot">
+    <div class="container mx-auto my-auto">
+        <div class="row my-auto">
+            <div class="sf col-5 col-sm-5 col-lg-5 col-md-5 my-auto justify-content-start"><p class="contact my-auto">Contact</p></div>
+            <div class="icons col-7 col-sm-7 col-lg-7 col-md-7 my-auto">
+                <a href="https://www.instagram.com/accounts/login/" target="blank">
+                    <img id="ins" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\instagram.png" width="27" height="27" class="sam">
+                </a>
+                <a href="https://accounts.snapchat.com/accounts/welcome" target="blank">
+                    <img id="tel" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\telegram.png" width="27" height="27" class="sam2">
+                </a>
+                <a href="https://web.whatsapp.com/" target="blank">
+                    <img id="what" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\whatsapp.png" width="27" height="27" class="sam">
+                </a>
+                <a href="https://www.linkedin.com/login" target="blank">
+                    <img id="lin" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\linkedin.png" width="27" height="27" class="sam" >
+                </a>
+            </div>
         </div>
-	</div>
     </div>
 </footer>
+
+
+
+
+<script>
+    document.getElementById("myrate").addEventListener("click", function(){
+		showRatingContainer();
+    });
+
+    function showRatingContainer() {
+        var inputhtml = '';
+        inputhtml += '<div class="container mytop">';
+	inputhtml += '<div class="row justify-content-center">';
+	inputhtml += '<div class="myplace col-12 text-center">';
+	inputhtml += '<span class="star" value="1" data-rating="1">&#9733;</span>';
+	inputhtml += '<span class="star" value="1" data-rating="2">&#9733;</span>';
+	inputhtml += '<span class="star" value="1" data-rating="3">&#9733;</span>';
+	inputhtml += '<span class="star" value="1" data-rating="4">&#9733;</span>';
+	inputhtml += '<span class="star" value="1" data-rating="5">&#9733;</span>';
+	inputhtml += '<div class="row r2 justify-content-center">';
+	inputhtml += '<div class="col-6 text-center">';
+	inputhtml += '<button type="button" class="btn btn-dark mys"><b>SUBMIT</b></button>';
+	inputhtml += '</div>';
+	inputhtml += '</div>';
+	inputhtml += '<div class="row r3 justify-content-center">';	
+	inputhtml += '<div class="col-9 text-center stm" >';
+	inputhtml += 'Thank you for supporting us.';
+	inputhtml += '</div>';
+	inputhtml += '</div>';
+	inputhtml += '</div>';
+	inputhtml += '</div>';
+	inputhtml += '<div class="row justify-content-center">';
+	inputhtml += '<div class="col-2 text-center">';
+	inputhtml += '<button type="button" class="btn btn-dark myc"><b>Close</b></button>';
+	inputhtml += '</div>';
+	inputhtml += '</div>';
+	inputhtml += '</div>';
+
+	document.getElementById("ratefree").innerHTML = inputhtml;
+	let stars = document.querySelectorAll(".star");
+        for (let i = 0; i < stars.length; i++) {
+            stars[i].addEventListener("click", function () {
+                for (let k = 0; k < stars.length; k++) {
+                    stars[k].style.color = "white";
+                }
+                let starnumber = stars[i].getAttribute('data-rating');
+                for (let j = 0; j < starnumber; j++) {
+                    stars[j].style.color = "gold";
+                }
+		document.querySelector(".mys").addEventListener("click",function(){
+				 
+					document.querySelector(".stm").textContent = 'You rated us ' + starnumber + ' - star  , Thank you!!';
+		});
+            });
+        }
+	document.querySelector(".myc").addEventListener("click",function(){
+		var clearing = document.querySelector(".mytop");
+		clearing.style.display = "none";
+		});
+    }
+    document.getElementById("myfeed").addEventListener("click", function(){
+		showFeedbackContainer();
+    });
+    function showFeedbackContainer() {
+        var inputhtml = '';
+        inputhtml += '<div class="container mytop">';
+	inputhtml += '<div class="row justify-content-center">';
+	inputhtml += '<div class="col-11 fbout">';
+	inputhtml += '<div class="col-7 mx-auto my-auto fbin">';
+	inputhtml += '<p class="contact2 my-auto"> Feedback! </p></div></div>';
+	inputhtml += '<div class="myshow col-11 text-center">Your feedback is valuable to us.</div>';
+	inputhtml += '<div class="col-11 text-center r25">';
+	inputhtml += '<textarea class="box col-12" placeholder="type here..."></textarea>';
+	inputhtml += '<div class="col-12"><button type="button" class="btn btn-dark insi col-12">Submit</button></div>';
+	inputhtml += '</div></div>';
+	inputhtml += '<div class="row justify-content-center">';
+	inputhtml += '<div class="col-5 mx-auto text-center">';
+	inputhtml += '<button type="button" class="btn btn-dark myc2">Close</button>';
+	inputhtml += '</div></div></div>';
+
+	document.getElementById("ratefree").innerHTML = inputhtml;
+	
+	document.querySelector(".myc2").addEventListener("click",function(){
+		var clearing = document.querySelector(".mytop");
+		clearing.style.display = "none";
+		});
+    }
+
+</script>
 
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
