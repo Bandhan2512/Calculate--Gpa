@@ -1,0 +1,52 @@
+body{
+	font-family: 'Century Gothic';
+	font-size: 20px;
+}
+.boxcolor{
+	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	color: white;
+	margin-bottom: 5px;
+	min-height: 60px;
+	border: 15px solid white;
+	padding: 3px;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	font-family: 'Century Gothic';
+}
+.boxcolorn{
+	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	color: white;
+	margin-bottom: 40px;
+	border: 10px solid white;
+	padding: 15px;
+	font-family: 'Century Gothic';
+}
+.forcor{
+	background-color: white;
+	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	padding: 5px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-family: 'Century Gothic';
+}
+.fortoo{
+	margin-top: 30px;
+}
+.boxcolorl{
+	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	color: white;
+	margin-bottom: 5px;
+	min-height: 25px;
+	border: 15px solid white;
+	padding: 5px;
+	font-size: 18px;
+	font-family: 'Avenir Next LT Pro';
+}
+.clear{
+	margin-top: 30px;
+	outline: none;
+	border: none;
+	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	color: white;
+	padding: 5px;
+}
