@@ -1,5 +1,6 @@
 body{
 	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	font-family: 'Century Gothic';
 }
 .c1{
 	margin-top: 60px;
@@ -12,10 +13,10 @@ body{
 	max-height: 400px;
 	background-color: white;
 	border: 5px solid white;
-	font-weight: bold;
+	font-weight: bolder;
 }
 .mid{
-	margin: 5px;
+	margin: 0px;
 	margin-top: 20px;
 }
 .c3{
@@ -30,8 +31,8 @@ body{
 	cursor: pointer;
 	padding: 5px 10px;
 	border-radius: 5px;
-	font-weight: bold;
 	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	font-weight: normal;
 }
 .close2{
 	text-decoration: none;
@@ -40,7 +41,6 @@ body{
 	cursor: pointer;
 	padding: 5px 10px;
 	border-radius: 5px;
-	font-weight: bold;
 	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 	margin: 3px;
 	margin-bottom: 3px;
@@ -50,11 +50,9 @@ p{
 	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 }
 .fon{
-	font-size: 28px;
-	font-family: Footlight MT Light;
+	font-size: 24px;
 }
 #result3{
 	font-size: 26px;
-	font-family: Footlight MT Light;
 }
 	
