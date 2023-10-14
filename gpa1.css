@@ -1,7 +1,7 @@
 .conti{
-	padding: 5px;
+	padding: 4px 10px;
 	border-radius: 6px;
-	font-size: 20px;
+	font-size: 16px;
 	white-space: nowrap;
     	overflow: hidden;
     	text-overflow: ellipsis;
@@ -11,7 +11,8 @@
 	
 }
 .ft{
-	font-size:30px;
+	font-size:24px;
+	padding: 0px;
 }
 .head1 {
     min-height: 100px;
@@ -43,17 +44,15 @@
 	padding: 5px;
 	font-size: 20px;
 }
-input[placeholder="Enter number of subjects"]{
-	padding-bottom:7px;
-}
-.inputnum{
-	max-width: 100%;
-	color: white;
-	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
-	border-radius: 5px;
-	min-height: 40px;
-	font-size: 20px;
-	text-align: center;
+.inputnum {
+    max-width: 100%;
+    color: white;
+    background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1));
+    border-radius: 5px;
+    min-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Century Gothic';
 }
 .inputnum::-webkit-inner-spin-button,
 .inputnum::-webkit-outer-spin-button,
@@ -71,17 +70,22 @@ input[placeholder="Enter number of subjects"]{
     padding-bottom: 5px;
 }
 .cal{
-	max-width: 100%;
-	justify-content: end;
-}
-.but1{
-	max-width: 95%;
+	justify-content: center;
 }
 .but{
 	margin-top: 110px;
 }
 a{
 	text-decoration: none;
+}
+h4{
+	font-size: 20px;
+}
+h6{
+	font-size: 22px;
+}
+.card-body{
+	margin: 5px;
 }
 	
 
