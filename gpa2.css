@@ -1,6 +1,6 @@
 body{
-	background-color: black;
-	font-family: Bell MT;
+	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	font-family: 'Century Gothic';
 }
 .bigbox{
 	height: 600px;
@@ -10,6 +10,7 @@ body{
 	justify-content: center;
 	background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(0.5px);
+	padding-right: 5px;
 }
 #numboxes{
 	max-width: 420px;
@@ -19,36 +20,39 @@ body{
 	margin-top: 15px;
 }
 .credit{
-	margin-left: 30px;
-	padding:5px 11px 5px 11px;
-	font-size:22px;
+	padding:5px 8px 5px 8px;
+	margin-right: 2px;
+	font-size: 18px;
 	margin-top:20px;
 	background-color:white;
 	color:RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
-	font-weight:bold;
+	font-weight: bolder;
 }
 .grade{
-	
-	padding:5px 11px 5px 11px;
-	font-size:22px;
+	margin-right: 3px;
+	margin-left: 2px;
+	padding:5px 8px 5px 8px;
+	font-size:18px;
 	margin-top:20px;
 	background-color:white;
 	color:RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
-	font-weight:bold;
+	font-weight: bolder;
+
 }
 ::-webkit-scrollbar{
-	max-width:5px;
+	max-width:3px;
 }
 ::-webkit-scrollbar-thumb{
 	background:RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
-	border-radius: 5px;	
+	border-radius: 5px;
+	margin-left: 3px !important;	
 }
 hr{
 	color: white;
 }
 .head{
 	color:white;
-	font-weight: bold;
+	font-size: 20px;
 } 
 .conti{
 	background-color: white
@@ -61,11 +65,13 @@ a{
 	color: white;
 }
 #mysty{
-	padding:0px;
-	font-size: 24px;
+	font-size: 20px;
 	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 	background-color: white;
-	padding: 5px;
-	font-weight: bold;
+	padding: 0px 8px;
 	cursor: pointer;
+	border:none;
+	font-weight: bolder;
 }
+
+	
