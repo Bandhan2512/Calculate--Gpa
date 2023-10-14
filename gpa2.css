@@ -73,5 +73,12 @@ a{
 	border:none;
 	font-weight: bolder;
 }
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('path/to/century-gothic.woff2') format('woff2'),
+         url('path/to/century-gothic.woff') format('woff');
+    /* Include other font formats here if available */
+}
+
 
 	
