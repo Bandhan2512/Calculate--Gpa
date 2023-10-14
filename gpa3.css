@@ -55,4 +55,11 @@ p{
 #result3{
 	font-size: 26px;
 }
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('path/to/century-gothic.woff2') format('woff2'),
+         url('path/to/century-gothic.woff') format('woff');
+    /* Include other font formats here if available */
+}
+
 	
