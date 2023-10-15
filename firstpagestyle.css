@@ -1,6 +1,5 @@
-@import url('https://fonts.cdnfonts.com/css/century-gothic-paneuropean');
-.show{
-	border-radius: 15px;
+*{ 
+	font-family: "century gothic"
 }
 #fb{
 	width: 100%;
