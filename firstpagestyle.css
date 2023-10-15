@@ -170,6 +170,3 @@ textarea{
 .contact2{
 	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 }
-body{
-	font-family: 'century-gothic-paneuropean', sans-serif;
-}
