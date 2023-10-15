@@ -104,6 +104,11 @@ a{
 .stm{
 	color: white;
 }
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('centurygothicfont.woff2') format('woff2');
+}
+
 .r3{
 	margin-top: 25px;
 	font-size: 18px;
