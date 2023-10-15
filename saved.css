@@ -1,6 +1,10 @@
-body{
-	font-family: 'Century Gothic';
-	font-size: 20px;
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('CenturyGothic.ttf') format('truetype');
+}
+body {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 20px;
 }
 .boxcolor{
 	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
