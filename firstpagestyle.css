@@ -104,10 +104,7 @@ a{
 .stm{
 	color: white;
 }
-@font-face {
-  font-family: 'Century Gothic';
-  src: url('centurygothicfont.woff2') format('woff2');
-}
+
 
 .r3{
 	margin-top: 25px;
@@ -175,5 +172,5 @@ textarea{
 	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 }
 body{
-	font-family: 'Avenir Next LT Pro';
+	font-family: "Avenir Next LT Pro";
 }
