@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Century Gothic';
-  src: url('GOTHICB0.TTF') format('truetype'),
-       url('CenturyGothic.ttf') format('truetype');
+  src: url('CenturyGothic.ttf') format('truetype');
 }
 body {
   font-family: 'Century Gothic', sans-serif;
