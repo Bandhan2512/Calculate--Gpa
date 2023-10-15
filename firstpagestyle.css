@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/century-gothic-paneuropean');
 .show{
 	border-radius: 15px;
 }
@@ -172,5 +173,5 @@ textarea{
 	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 }
 body{
-	font-family: "Avenir Next LT Pro";
+	font-family: 'Century Gothic Paneuropean', sans-serif;
 }
