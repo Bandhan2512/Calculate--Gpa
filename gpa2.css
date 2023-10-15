@@ -1,6 +1,10 @@
-body{
-	background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
-	font-family: 'Century Gothic';
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('CenturyGothic.ttf') format('truetype');
+}
+body {
+  font-family: 'Century Gothic', sans-serif;
+  background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
 }
 .bigbox{
 	height: 600px;
