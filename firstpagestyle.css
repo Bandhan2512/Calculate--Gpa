@@ -1,5 +1,6 @@
-*{ 
-	font-family: "century gothic";
+@import url('https://fonts.googleapis.com/css?family=Century+Gothic');
+* {
+    font-family: 'Century Gothic', sans-serif;
 }
 #fb{
 	width: 100%;
