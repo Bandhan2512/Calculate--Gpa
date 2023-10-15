@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Century+Gothic');
-* {
-    font-family: 'Century Gothic', sans-serif;
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('centurygothicfont/GOTHICB0.TTF') format('truetype'),
+       url('CenturyGothic.ttf') format('truetype');
+}
+body {
+  font-family: 'Century Gothic', sans-serif;
 }
 #fb{
 	width: 100%;
