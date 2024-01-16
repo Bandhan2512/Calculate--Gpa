@@ -12,6 +12,13 @@
 <header data-bs-theme="dark">
     <div class="text-bg-dark collapse show" id="navbarHeader" style="">
         <div class="container">
+	    <div class="row justify-content-center">
+        	<div class="col-11">
+            		<div class="welcome col-12 mx-auto text-center">
+                		<h3 class="name"></h3>
+            		</div>
+        	</div>
+    	    </div>
             <div class="row">
                 <div class="col-sm-8 col-md-7 py-4" id="fb">
                     <h2>Services</h2>
@@ -32,7 +39,7 @@
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Welcome..!</h1>
+                <h1 class="fw-light">Get Started..!</h1>
                 <p class="lead text-body-secondary">Welcome to our Web Development Toolkit! Explore a range of tools designed to simplify your online experience. From GPA calculation to password generation and CAPTCHA decoding, we've got you covered. Join us in unlocking the world of effortless web development.</p>
                 <p>
                     <button type="button" id="myrate" class="btn btn-primary my-2">Rate us now</button>
@@ -43,7 +50,7 @@
         </div>
     </section>
 
-    <div class="album py-5 bg-body-tertiary">
+    <div class="album py-5 bg-body-tertiary newcolor">
         <div class="container">
 
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-3">
@@ -71,7 +78,7 @@
                             <p class="card-text">Your secure key to online safety by crafting unbreakable passwords.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-dark"><a href="passwordgenerator.html">Generate</a></button>
+                                    <button type="button" class="btn btn-dark"><a href=#>Generate</a></button>
                                 </div>
                             </div>
                         </div>
@@ -103,17 +110,17 @@
         <div class="row my-auto">
             <div class="sf col-5 col-sm-5 col-lg-5 col-md-5 my-auto justify-content-start"><p class="contact my-auto">Contact</p></div>
             <div class="icons col-7 col-sm-7 col-lg-7 col-md-7 my-auto">
-                <a href="https://www.instagram.com/bandhan_reddy_varra/" target="blank">
-                    <img id="ins" src="instagram.png" width="30" height="30" class="sam">
+                <a href="https://www.instagram.com/accounts/login/" target="blank">
+                    <img id="ins" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\instagram.png" width="27" height="27" class="sam">
                 </a>
                 <a href="https://accounts.snapchat.com/accounts/welcome" target="blank">
-                    <img id="tel" src="telegram.png" width="30" height="30" class="sam2">
+                    <img id="tel" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\telegram.png" width="27" height="27" class="sam2">
                 </a>
                 <a href="https://web.whatsapp.com/" target="blank">
-                    <img id="what" src="whatsapp.png" width="30" height="30" class="sam">
+                    <img id="what" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\whatsapp.png" width="27" height="27" class="sam">
                 </a>
-                <a href="https://www.linkedin.com/in/bandhan-reddy-varra-327a94260/" target="blank">
-                    <img id="lin" src="linkedin.png" width="30" height="30" class="sam" >
+                <a href="https://www.linkedin.com/login" target="blank">
+                    <img id="lin" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\linkedin.png" width="27" height="27" class="sam" >
                 </a>
             </div>
         </div>
@@ -124,9 +131,11 @@
 
 
 <script>
-    document.getElementById("myrate").addEventListener("click", function(){
-		showRatingContainer();
-    });
+	document.addEventListener("DOMContentLoaded", function () {
+    		let gotname = localStorage.getItem("movename");
+    		document.querySelector(".name").innerHTML = "Welcome, " + gotname;
+	});
+
 
     function showRatingContainer() {
         var inputhtml = '';
