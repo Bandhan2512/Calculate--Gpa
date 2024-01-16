@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'Century Gothic';
-  src: url('CenturyGothic.ttf') format('truetype');
+  src: url('GOTHICB0.TTF') format('truetype'),
+       url('CenturyGothic.ttf') format('truetype');
 }
 body {
   font-family: 'Century Gothic', sans-serif;
 }
+
 #fb{
 	width: 100%;
 }
@@ -59,7 +61,6 @@ footer{
 }
 a{
 	text-decoration: none;
-	color: white;
 }
 #ins{	
 	box-shadow: 0px 0px 20px #E4405F;
@@ -92,6 +93,7 @@ a{
 }
 .mytop{
 	margin-top: 30px;
+	font-family: Footlight MT Light;
 }
 .mys{
 	background-color: white;
@@ -107,8 +109,6 @@ a{
 .stm{
 	color: white;
 }
-
-
 .r3{
 	margin-top: 25px;
 	font-size: 18px;
@@ -173,4 +173,14 @@ textarea{
 }
 .contact2{
 	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+}
+.welcome{
+	background-color: white;
+	color:RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	margin: 20px;
+	margin-bottom: 0px;
+}
+.name{
+	color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1));
+	padding: 8px;
 }
