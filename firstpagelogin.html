@@ -78,7 +78,7 @@
                             <p class="card-text">Your secure key to online safety by crafting unbreakable passwords.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-dark"><a href=#>Generate</a></button>
+                                    <button type="button" class="btn btn-dark"><a class="cal" href="passwordgenerator.html">Generate</a></button>
                                 </div>
                             </div>
                         </div>
@@ -111,16 +111,16 @@
             <div class="sf col-5 col-sm-5 col-lg-5 col-md-5 my-auto justify-content-start"><p class="contact my-auto">Contact</p></div>
             <div class="icons col-7 col-sm-7 col-lg-7 col-md-7 my-auto">
                 <a href="https://www.instagram.com/accounts/login/" target="blank">
-                    <img id="ins" src="instagram.png" width="27" height="27" class="sam">
+                    <img id="ins" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\instagram.png" width="27" height="27" class="sam">
                 </a>
                 <a href="https://accounts.snapchat.com/accounts/welcome" target="blank">
-                    <img id="tel" src="telegram.png" width="27" height="27" class="sam2">
+                    <img id="tel" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\telegram.png" width="27" height="27" class="sam2">
                 </a>
                 <a href="https://web.whatsapp.com/" target="blank">
-                    <img id="what" src="whatsapp.png" width="27" height="27" class="sam">
+                    <img id="what" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\whatsapp.png" width="27" height="27" class="sam">
                 </a>
                 <a href="https://www.linkedin.com/login" target="blank">
-                    <img id="lin" src="linkedin.png" width="27" height="27" class="sam" >
+                    <img id="lin" src="C:\Users\Bandhan Reddy\Music\MyFullStackProject\linkedin.png" width="27" height="27" class="sam" >
                 </a>
             </div>
         </div>
@@ -135,6 +135,9 @@
     		let gotname = localStorage.getItem("movename");
     		document.querySelector(".name").innerHTML = "Welcome, " + gotname;
 	});
+	document.getElementById("myrate").addEventListener("click", function(){
+		showRatingContainer();
+    });
 
 
     function showRatingContainer() {
